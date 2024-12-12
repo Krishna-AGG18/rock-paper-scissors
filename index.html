@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Rock Paper Scissors</p>
+    </nav>
+    <section>
+        <div class="game-container">
+            <div class="box-1 box">
+                 You : <span id="score1">0</span>
+                 <div class="choosed1"></div>
+            </div>
+            <div class="box-2"></div>
+            <div class="box-3 box">
+                Computer : <span id="score2">0</span>
+                <div class="choosed2"></div>
+            </div>
+        </div>
+        <div class="round-count">
+            &nbsp;
+        </div>
+    </section>
+    <div class="options-cont">
+        <div class="options">
+            <div class="rock">
+                <img class="choose" src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png" alt="Rock" id="rock">
+            </div>
+            <div class="paper">
+                <img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png" alt="paper" class="choose" id="paper">
+            </div>
+            <div class="scissor">
+                <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/scissors.png" alt="scissor" class="choose" id="scissor">
+            </div>
+        </div>
+        <div class="btns-info">
+            <button class="btn" id="choice">Select your choice</button>
+            <button class="btn" id="resultshow">First to win 3 rounds wins!!</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
