@@ -103,9 +103,22 @@ const displayImage = (container, src) => {
 const resetall = () => {
     let button = document.getElementById("choice");
     let result = document.getElementById("resultshow");
-    
-    button.innerText = "Play Again!!";
 
+    button.innerText = "Play Again!!";
+    let stopp = setInterval(() => {
+        button.classList.toggle("hoverr");
+    }, 1000);
+    
+    setTimeout(() => {
+        clearInterval(stopp); // Stop the interval
+        console.log("Interval stopped");
+    
+        // Check and remove the "hoverr" class if it exists
+        const classes = button.getAttribute("class"); // Get the class attribute as a string
+        if (classes && classes.split(" ").includes("hoverr")) { // Split into an array and check
+            button.classList.remove("hoverr");
+        }
+    }, 5000);
     // Reset game state
     button.addEventListener("click", () => {
         youwin = 0;
@@ -117,6 +130,11 @@ const resetall = () => {
         user.innerHTML = ""; // Clear user choice
         comp.innerHTML = ""; // Clear computer choice
         button.innerText = "Select your choice";
+        
+        //wapas choose kr sake bc
+        imgselected.forEach((imgg) => {
+            imgg.style.pointerEvents = "auto"; // Enable clicking
+        });
     }, { once: true }); // Ensure the event listener is added only once
 };
 
@@ -155,6 +173,11 @@ const playGame = (userchoice) => {
     if (compwin === 3 || youwin === 3) {
         let result = document.getElementById("resultshow");
         result.innerText = compwin === 3 ? `Computer won the game !!` : `You won the game !!`;
+        
+        //user or choose na kare
+        imgselected.forEach((imgg) => {
+            imgg.style.pointerEvents = "none"; // Disable clicking
+        });
         resetall();
     }
 };
