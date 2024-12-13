@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: "Protest Revolution", sans-serif;
 }
-body{
-    color: white ;
+
+body {
+    color: white;
     background-color: black;
 }
-nav{
+
+nav {
     font-weight: bolder;
     display: flex;
     flex-wrap: wrap;
@@ -18,21 +21,24 @@ nav{
     align-items: center;
     font-size: 8vmin;
 }
-nav p{
+
+nav p {
     transition: all .3s ease-out;
 
 }
-nav p:hover{
-    text-shadow: 0 0 2px rgb(55,0,179),0 0 4px rgb(55,0,179),0 0 8px rgb(55,0,179),0 0 16px rgb(55,0,179);
+
+nav p:hover {
+    text-shadow: 0 0 2px rgb(55, 0, 179), 0 0 4px rgb(55, 0, 179), 0 0 8px rgb(55, 0, 179), 0 0 16px rgb(55, 0, 179);
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.game-container{
+
+.game-container {
     width: 100vmin;
     display: flex;
     gap: 15px;
@@ -43,53 +49,61 @@ section{
     padding-bottom: 0;
 }
 
-.box{
-    width:35vmin;
-    height:30vmin;
+.box {
+    width: 35vmin;
+    height: 30vmin;
     font-size: 4vmin;
     text-align: center;
 }
 
-.box-2{
+.box-2 {
     height: 30vmin;
     border: 2px solid #1f1f1f;
 }
-.options-cont{
+
+.options-cont {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.options{
+
+.options {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     gap: 20px;
     align-items: center;
 }
-.choose{
+
+.choose {
     width: 15vmin;
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-.choose:hover{
-    transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4), 
-              0 0 22px rgba(0, 150, 255, 0.7), 
-              0 0 44px rgba(0, 150, 255, 0.5);
+.choose:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4),
+        0 0 22px rgba(0, 150, 255, 0.7),
+        0 0 44px rgba(0, 150, 255, 0.5);
 }
-.round-count{
+
+.round-count {
     padding: 15px;
     font-size: 3vmin;
 }
-.btns-info{
-    padding-block: 15px;flex-direction: column;
+
+.btns-info {
+    padding-block: 15px;
+    flex-direction: column;
     display: flex;
 
 }
-.btn{
+
+.btn {
     padding: 8px 16px;
     font-size: 3vmin;
     font-family: "Segoe UI";
@@ -98,7 +112,19 @@ section{
     background: transparent;
     color: #fff;
     cursor: pointer;
+
 }
-.choosed1, .choosed2{
+.hoverr {
+    background: linear-gradient(90deg, red, blue);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 3px transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+.choosed1,
+.choosed2 {
     padding: 20px;
 }
